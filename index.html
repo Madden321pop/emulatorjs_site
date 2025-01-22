@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Mario World</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+    <script src="emulator.js"></script>
+</head>
+<body>
+    <script>
+        EmulatorJS.open("roms/super_mario_world.smc", {
+            core: "snes",
+            gameId: "super_mario_world",
+            width: 800,
+            height: 600
+        });
+    </script>
+</body>
+</html>
